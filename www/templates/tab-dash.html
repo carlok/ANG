@@ -1,0 +1,61 @@
+<ion-view title="Dashboard">
+    <ion-content class="has-header padding">
+        <div class="row">
+            <div class="col">
+                <p><strong>Acceleration Noise</strong> - Samples {{counter}}/{{counterMax}}</p>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>aX</p>
+            </div>
+            <div class="col">
+                <p>{{acceleration.x.toFixed(3)}}</p>
+            </div>
+            <div class="col">
+                <p>aY</p>
+            </div>
+            <div class="col">
+                <p>{{acceleration.y.toFixed(3)}}</p>
+            </div>
+            <div class="col">
+                <p>aZ</p>
+            </div>
+            <div class="col">
+                <p>{{acceleration.z.toFixed(3)}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>nX (%)</p>
+            </div>
+            <div class="col">
+                <p>{{ranges.x.d.toFixed(3)}}</p>
+            </div>
+            <div class="col">
+                <p>nY (%)</p>
+            </div>
+            <div class="col">
+                <p>{{ranges.y.d.toFixed(3)}}</p>
+            </div>
+            <div class="col">
+                <p>nZ (%)</p>
+            </div>
+            <div class="col">
+                <p>{{ranges.z.d.toFixed(3)}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button ng-disabled="buttons.start" ng-click="watchStart()" class="button button-block button-stable">Start</button>
+            </div>
+            <div class="col">
+                <button ng-disabled="buttons.stop" ng-click="watchStop()" class="button button-block button-stable">Stop</button>
+            </div>
+            <div class="col">
+                <button ng-disabled="buttons.reset" ng-click="watchReset()" class="button button-block button-stable">Reset</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
