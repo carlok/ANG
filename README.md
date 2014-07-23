@@ -1,6 +1,8 @@
 ANG - Accelerometer Noise Gauge
 ==
 
+![](https://raw.githubusercontent.com/carlok/ANG/master/ang_screenshot_2014-07-23-18-43-29.png)
+
 ANG is a small project/exercise to measure the noise of the accelerometer that many smartphones have.
 
 The idea is simple: after having put your mobile on a "quiet" surface, it starts colleting samples of the (x, y, z) acceleration, measuring the 3 axial noise as a max/min percentage.
